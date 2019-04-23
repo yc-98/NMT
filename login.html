@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Login </title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Cabin Sketch' rel='stylesheet'>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+body{
+background-image:url(back1.jpg);
+background-repeat: repeat;
+    background-position: center; 
+}
+.ycback
+{background: rgba(0, 0, 0, 0.4);
+vertical-align: middle;
+height:80%;
+padding:6%;
+}
+input{
+width:80%;
+font-size:18px;
+margin-left:10%;
+}
+.col-sm-4{
+margin:auto;
+}
+</style>
+</head>
+<body>
+<br><br><br>
+	<div class="container ycback">
+	<div class="row content">
+
+		<div class="col-sm-12 "><h1 align="center" style="color:#66c2ff;font-family: 'Cabin Sketch';font-size:50px">Network Monitoring Tool</h1><br><br><br></div>
+		<div class="col-sm-3 "></div>
+		<div class="col-sm-6 ">
+		
+		<form  method="post" action="loginresult.php"> 
+
+			<input type="text" name="name" placeholder="username" align="middle" required><br><br>
+			<input type="password" name="password" id="myInput" align="middle" placeholder="password" required><br>
+
+			<!-- An element to toggle between password visibility -->
+			<input type="checkbox" onclick="myFunction()" style="width:auto;margin-left:10%;"><span style="color:white">Show Password</span><br><br>
+			<script>
+			function myFunction() {
+			    var x = document.getElementById("myInput");
+			    if (x.type === "password") {
+				x.type = "text";
+			    } else {
+				x.type = "password";
+			    }
+			} 
+			</script>
+			  <input class="btn btn-primary " type="submit" name="submit" value="submit">  
+		</form>
+		</div>
+		<div class="col-sm-3 "></div>
+	</div>
+	</div>
+</body>
+</html>
